@@ -1,6 +1,15 @@
-;;; liblouis.el --- mode for editing liblouis translation tables
+;;; liblouis.el --- mode for editing liblouis braille translation tables
 
-;; Copyright (C) 2022 Swiss Library for the Blind, Visually Impaired and Print Disabled
+;; Copyright (C) 2011-2022 Swiss Library for the Blind, Visually Impaired and Print Disabled
+
+;; Author: Christian Egli <christian.egli@sbs.ch>
+;; Maintainer: Christian Egli <christian.egli@sbs.ch>
+;; Keywords: liblouis braille
+;; Version: 0.1
+;; Homepage: https://github.com/liblouis/liblouis-mode
+;; Package-Requires: ((emacs "26.1"))
+
+;; This file is not part of GNU Emacs.
 
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published
@@ -93,3 +102,4 @@ Turning on liblouis mode runs the normal hook `liblouis-mode-hook'.
 (add-to-list 'magic-mode-alist '("^#[[:blank:]]+liblouis: " . liblouis-mode))
 
 (provide 'liblouis-mode)
+;;; liblouis.el ends here
