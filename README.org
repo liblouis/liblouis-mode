@@ -46,7 +46,7 @@ separate emacs package was released on April 6, 2020.
     2020-04-06: Version 0.1
 
 The history was extracted from the liblouis repository with the
-~filter-repo~ command
+[[https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html][filter-repo]] command
 
 #+begin_src shell
   $ cd ~/tmp
