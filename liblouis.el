@@ -1,4 +1,4 @@
-;;; liblouis.el --- mode for editing liblouis braille translation tables
+;;; liblouis.el --- Mode for editing liblouis braille translation tables
 
 ;; Copyright (C) 2011-2022 Swiss Library for the Blind, Visually Impaired and Print Disabled
 
@@ -25,6 +25,9 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+
+;; This package provides a major mode for editing liblouis braille
+;; translation tables.
 
 
 ;;; Code:
@@ -101,5 +104,5 @@ Turning on liblouis mode runs the normal hook `liblouis-mode-hook'.
 ;;;###autoload
 (add-to-list 'magic-mode-alist '("^#[[:blank:]]+liblouis: " . liblouis-mode))
 
-(provide 'liblouis-mode)
+(provide 'liblouis)
 ;;; liblouis.el ends here
