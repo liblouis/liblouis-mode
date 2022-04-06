@@ -45,6 +45,16 @@ separate emacs package was released on April 6, 2020.
 
     2020-04-06: Version 0.1
 
+The history was extracted from the liblouis repository with the
+~filter-repo~ command
+
+#+begin_src shell
+  $ cd ~/tmp
+  $ git clone git@github.com:liblouis/liblouis.git
+  $ cd ~/tmp/liblouis
+  $ git filter-repo --path contrib/liblouis.el
+#+end_src
+
 * License
 
 Copyright © 2011-2022 [[https://www.sbs.ch/][Swiss Library for the Blind, Visually Impaired and Print Disabled]]
