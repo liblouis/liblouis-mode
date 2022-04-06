@@ -13,7 +13,7 @@ standard command package-install:
 M-x package-install RET liblouis-mode RET
 #+end_example
 
-Alternatively, you can use [[https://github.com/jwiegley/use-package][~use-package~]] to automatically install and
+Alternatively, you can use [[https://github.com/jwiegley/use-package][use-package]] to automatically install and
 configure ~liblouis-mode~. Just add the following to your init file:
 
 #+begin_src emacs-lisp
@@ -21,10 +21,21 @@ configure ~liblouis-mode~. Just add the following to your init file:
     :ensure t)
 #+end_src
 
+* Usage
+
+When ~liblouis-mode~ is loaded it will automatically be used for files
+that contain the following line somewhere near the top:
+
+#+begin_example
+# liblouis: ...
+#+end_example
+
+Most liblouis tables contain this line.
+
 * Bugs
 
 If you find any bugs in liblouis-mode, please open a ticket on the
-GitHub issue tracker.
+[[https://github.com/liblouis/liblouis-mode/issues][GitHub issue tracker]].
 
 * History
 
@@ -36,7 +47,7 @@ separate emacs package was released on April 6, 2020.
 
 * License
 
-Copyright © 2011-2022 Swiss Library for the Blind, Visually Impaired and Print Disabled 
+Copyright © 2011-2022 [[https://www.sbs.ch/][Swiss Library for the Blind, Visually Impaired and Print Disabled]]
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
