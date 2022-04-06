@@ -1,4 +1,4 @@
-;;; liblouis.el --- Mode for editing liblouis braille translation tables
+;;; liblouis.el --- Mode for editing liblouis braille translation tables -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2011-2022 Swiss Library for the Blind, Visually Impaired and Print Disabled
 
