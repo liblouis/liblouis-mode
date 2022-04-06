@@ -1,0 +1,44 @@
+#+title: Liblouis Mode
+#+author: Christian Egli
+
+Liblouis mode is an Emacs major mode for editing [[https://github.com/liblouis/liblouis][liblouis]] braille
+translation tables.
+
+* Installation
+
+liblouis-mode is available on [[https://melpa.org/][MELPA]], and can be installed with the
+standard command package-install:
+
+#+begin_example
+M-x package-install RET liblouis-mode RET
+#+end_example
+
+Alternatively, you can use [[https://github.com/jwiegley/use-package][~use-package~]] to automatically install and
+configure ~liblouis-mode~. Just add the following to your init file:
+
+#+begin_src emacs-lisp
+  (use-package liblouis-mode
+    :ensure t)
+#+end_src
+
+* Bugs
+
+If you find any bugs in liblouis-mode, please open a ticket on the
+GitHub issue tracker.
+
+* History
+
+liblouis-mode was written and is maintained by Christian Egli. It was
+part of liblouis since 2011. The first version that was released as a
+separate emacs package was released on April 6, 2020.
+
+    2020-04-06: Version 0.1
+
+* License
+
+Copyright © 2011-2022 Swiss Library for the Blind, Visually Impaired and Print Disabled 
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3, or (at your option)
+any later version.
