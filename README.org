@@ -1,6 +1,8 @@
 #+title: Liblouis Mode
 #+author: Christian Egli
 
+[[https://github.com/liblouis/liblouis-mode/actions/workflows/elisp-lint.yml][https://github.com/liblouis/liblouis-mode/actions/workflows/elisp-lint.yml/badge.svg]]
+
 Liblouis mode is an Emacs major mode for editing [[https://github.com/liblouis/liblouis][liblouis]] braille
 translation tables.
 
