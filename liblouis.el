@@ -83,8 +83,7 @@ See `compilation-error-regexp-alist' for semantics.")
 ;;###autoload
 (define-derived-mode liblouis-mode prog-mode "liblouis"
   "Major mode for editing liblouis translation tables.
-Turning on liblouis mode runs the normal hook `liblouis-mode-hook'.
-"
+Turning on liblouis mode runs the normal hook `liblouis-mode-hook'."
   (set-syntax-table liblouis-mode-syntax-table)
   (setq-local compile-command (concat "lou_checktable " buffer-file-name))
   (setq-local require-final-newline t)
