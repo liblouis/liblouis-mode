@@ -32,6 +32,8 @@
 
 ;;; Code:
 
+(require 'compile)
+
 (defvar liblouis-mode-hook nil
   "Normal hook run when entering liblouis mode.")
 
@@ -39,11 +41,11 @@
   "Abbrev table in use in liblouis mode buffers.")
 (define-abbrev-table 'liblouis-mode-abbrev-table ())
 
-(eval-after-load "compile"
-  '(add-to-list 'compilation-error-regexp-alist
-                ;; WARNING: foo.txt: line 13: section title out of sequence: expected level 3, got level 4
-                ;; ERROR: foo.txt: line 18: only book doctypes can contain level 0 sections
-                '("^\\(ERROR\\|WARNING\\|DEPRECATED\\): \\([^:]*\\): line \\([0-9]+\\):" 2 3)))
+(defconst liblouis-compilation-error-regexp
+  ;; lou_checkyaml:./braille-specs/de-g2-sbs.yaml:372: Failure
+  '("lou_checkyaml:\\(\\./[-a-z0-9/.]+\\):\\([0-9]+\\):" 1 2)
+  "Specifications used for matching errors in the test suite log file.
+See `compilation-error-regexp-alist' for semantics.")
 
 (defvar liblouis-mode-syntax-table
   (let ((table (make-syntax-table)))
@@ -86,6 +88,10 @@ Turning on liblouis mode runs the normal hook `liblouis-mode-hook'.
   (set-syntax-table liblouis-mode-syntax-table)
   (setq-local compile-command (concat "lou_checktable " buffer-file-name))
   (setq-local require-final-newline t)
+
+  (add-to-list 'compilation-error-regexp-alist 'liblouis)
+  (add-to-list 'compilation-error-regexp-alist-alist
+	       (cons 'liblouis liblouis-compilation-error-regexp))
 
   (setq-local comment-start "# ")
   (setq-local comment-end "")
