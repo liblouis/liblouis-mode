@@ -5,7 +5,7 @@
 ;; Author: Christian Egli <christian.egli@sbs.ch>
 ;; Maintainer: Christian Egli <christian.egli@sbs.ch>
 ;; Keywords: languages
-;; Version: 0.1
+;; Version: 0.2
 ;; Homepage: https://github.com/liblouis/liblouis-mode
 ;; Package-Requires: ((emacs "26.1"))
 
