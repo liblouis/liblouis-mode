@@ -1,0 +1,28 @@
+name: Elisp linting
+
+on:
+  pull_request:
+  push:
+    paths:
+      - liblouis.el
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs_version:
+          - 25.1
+          - 26.1
+          - 27.1
+          - 28.1
+          - snapshot
+    steps:
+    - uses: purcell/setup-emacs@master
+      with:
+        version: ${{ matrix.emacs_version }}
+    - uses: actions/checkout@v2
+    - uses: leotaku/elisp-check@master
+      with:
+        file: liblouis.el
