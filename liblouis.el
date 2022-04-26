@@ -33,6 +33,7 @@
 ;;; Code:
 
 (require 'compile)
+(require 'regexp-opt)
 
 (defvar liblouis-mode-hook nil
   "Normal hook run when entering liblouis mode.")
