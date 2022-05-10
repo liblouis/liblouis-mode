@@ -66,7 +66,7 @@ See `compilation-error-regexp-alist' for semantics.")
        "modeletter" "capsletter" "begmodeword" "begcapsword" "endcapsword"
        "capsmodechars" "begcaps" "endcaps" "begcapsphrase" "endcapsphrase"
        "lencapsphrase" "letsign" "noletsign" "noletsignbefore" "noletsignafter"
-       "nocontractsign" "numsign" "numericnocontchars" "numericmodechars"
+       "nocontractsign" "numsign" "nonumsign" "numericnocontchars" "numericmodechars"
        "midendnumericmodechars" "begmodephrase" "endmodephrase" "lenmodephrase"
        "seqdelimiter" "seqbeforechars" "seqafterchars" "seqafterpattern"
        "seqafterexpression" "class" "emphclass" "begemph" "endemph" "noemphchars"
